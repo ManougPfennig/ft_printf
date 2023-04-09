@@ -6,7 +6,7 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/08 01:07:24 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/04/09 15:28:20 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/04/09 18:05:09 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_putnbr_len(int nb)
 	if (nb == -2147483648)
 	{
 		write(1, "-2147483648", 11);
-		return (11) ;
+		return (11);
 	}
 	if (nb < 0)
 	{
@@ -44,9 +44,3 @@ int	ft_putnbr_u_len(unsigned int nb)
 	ft_putchar((nb % 10) + 48);
 	return (total);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	printf("\n%i", ft_putnbr_len(-2147483648));
-// }
