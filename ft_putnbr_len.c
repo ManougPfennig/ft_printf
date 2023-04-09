@@ -6,7 +6,7 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/08 01:07:24 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/04/08 02:39:52 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/04/09 15:28:20 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	ft_putnbr_len(int nb)
 	if (nb < 0)
 	{
 		ft_putchar('-');
+		total++;
 		nb = nb * -1;
 	}
 	if (nb >= 10)

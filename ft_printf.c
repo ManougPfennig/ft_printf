@@ -6,7 +6,7 @@
 /*   By: mapfenni <mapfenni@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/07 16:57:34 by mapfenni          #+#    #+#             */
-/*   Updated: 2023/04/08 02:48:42 by mapfenni         ###   ########.fr       */
+/*   Updated: 2023/04/09 15:40:38 by mapfenni         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int	print_for_letr(char c, va_list args)
 	else if (c == 'u')
 		total += ft_putnbr_u_len(va_arg(args, unsigned int));
 	else if (c == 'x')
-		total += ft_putnbr_base_len(va_arg(args, int), "0123456789abcdef");
+		total += ft_putnbr_base_len(va_arg(args, unsigned int), "0123456789abcdef");
 	else if (c == 'X')
-		total += ft_putnbr_base_len(va_arg(args, int), "0123456789ABCDEF");
+		total += ft_putnbr_base_len(va_arg(args, unsigned int), "0123456789ABCDEF");
 	else if (c == '%' && ++total)
 		ft_putchar('%');
 	return (total);
@@ -69,8 +69,6 @@ int	ft_printf(const char *str, ...)
 // #include <stdio.h>
 // int main ()
 // {
-// 	ft_printf(" %p %p ", LONG_MIN, LONG_MAX);
-// 	printf(" %p %p ", LONG_MIN, LONG_MAX);
-// 	// ft_printf("%s / %c / %d / %p / %u / %x / %X / %% /", "wsh bb", 'b', 12345, (void *)3, 789, 123, 123);
-// 	// printf("\n%s / %c / %d / %p / %u / %x / %X / %% /", "wsh bb", 'b', 12345, (void *)3, 789, 123);
+// 	ft_printf("%x / %x\n", -1, 499992);
+// 	printf("%x / %x\n", -1, 499992);
 // }
